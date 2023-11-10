@@ -2,8 +2,8 @@
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-  display: flex;
+  display:flex;
   margin-top: 50;
-  align-items: top;
+  align-items:center;
   justify-content: center;
 }

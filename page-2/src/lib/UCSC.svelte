@@ -3,7 +3,6 @@
   import firebase from 'firebase/compat/app';
   import 'firebase/compat/firestore';
 
-  // Initialize Firebase
   const firebaseConfig = {
   apiKey: "AIzaSyAobsnee9HLdWRIe7b2ZzVoyEab0q2l_8c",
   authDomain: "test0-cb8c5.firebaseapp.com",
@@ -17,13 +16,13 @@
     firebase.initializeApp(firebaseConfig);
   }
   const db = firebase.firestore();
-  const collectionRef = db.collection('location-UCSC');
+  const collectionRef = db.collection("location-UCSC");
 
   let images = [];
   let index = 0;
 
   onMount(async () => {
-      const querySnapshot = await db.collection("location-UCSC").get();
+      const querySnapshot = await collectionRef.get();
       const newImages = [];
       querySnapshot.forEach((doc) => {
           const imageData = {
@@ -32,7 +31,7 @@
           };
           newImages.push(imageData);
       });
-      images = newImages; // Assign the new array to the existing variable
+      images = newImages;
       console.log(images);
   });
 
@@ -41,7 +40,7 @@
   };
 
   const incrementClicksAndNextImage = async () => {
-    const docRef = db.collection("location-UCSC").doc(images[index].id);
+    const docRef = collectionRef.doc(images[index].id);
     await docRef.update({
       CLICKS: firebase.firestore.FieldValue.increment(1)
     });

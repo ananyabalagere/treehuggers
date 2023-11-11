@@ -2,18 +2,21 @@
   font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 body{
-  background-color: mediumseagreen;
+  background-color: rgb(60, 159, 105);
+  background: linear-gradient(to right ,green, rgb(120, 233, 120))
 }
 .SC360-h1{
   text-align: center;
   text-shadow: 2px;
   background-attachment: fixed;
   font-size: 50px;
+  padding: 30px;
+  background-color: rgba(13, 105, 87, 0.532);
+  color: white;
 }
 
 .SCHERE-p{
   text-align: center;
-  margin-top: 10px;
 }
 
 .ucsc-button{
@@ -25,6 +28,8 @@ body{
   font-size: 55px;
   background-position: top;
   padding-bottom: 10px;
+  border: none;
+  cursor: pointer;
 }
 
 .beach-button{
@@ -36,19 +41,22 @@ body{
   border-radius: 25px;
   background-image:url(https://media.california.com/media/_versions_webp/articles/santa_cruz_beach__8030x5353____v1800x750__.webp);
   background-position: center;
-  padding-bottom: 20px;
+  border: none;
+  cursor: pointer;
 }
 
 .sc-button{
   margin-right: 500px;
   height: 250px; 
   width: 50%;
-  color:white;
+  color: white;
   font-size: 55px;
   font-style: italic;
   border-radius: 25px;
   background-image:url(https://campspot.blog/wp-content/uploads/2021/10/Santa-Cruz-Mountains.jpg);
   background-position: bottom;
+  border:none;
+  cursor: pointer;
 }
 
 .button-container{
@@ -60,4 +68,7 @@ body{
 p{
   text-align: center;
   padding-bottom: 50px;
+}
+.ucsc-button, .beach-button, .sc-button {
+  margin: 5px;
 }

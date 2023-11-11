@@ -36,3 +36,4 @@ UCSC copy.svelte
 */*venv
 *pycache*
 data.py
+autobuild.py

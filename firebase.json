@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "santacruz360",
     "public": "public",
     "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
     "headers": [
@@ -20,13 +21,13 @@
       }
     ],
     "environment": {
-      "FIREBASE_API_KEY": "AIzaSyAobsnee9HLdWRIe7b2ZzVoyEab0q2l_8c",
-      "FIREBASE_AUTH_DOMAIN": "test0-cb8c5.firebaseapp.com",
-      "FIREBASE_PROJECT_ID": "test0-cb8c5",
-      "FIREBASE_STORAGE_BUCKET": "test0-cb8c5.appspot.com",
-      "FIREBASE_MESSAGING_SENDER_ID": "82222829928",
-      "FIREBASE_APP_ID": "1:82222829928:web:6e43dd913ee9f3356846dd",
-      "FIREBASE_MEASUREMENT_ID": "G-L9VZ4RDW7C"
+      "FIREBASE_API_KEY": "AIzaSyDMUWrGNWlW4OlZxfq4f9kJHrSs_CdYsdk",
+      "FIREBASE_AUTH_DOMAIN": "santacruz360-a3ef1.firebaseapp.com",
+      "FIREBASE_PROJECT_ID": "santacruz360-a3ef1",
+      "FIREBASE_STORAGE_BUCKET": "santacruz360-a3ef1.appspot.com",
+      "FIREBASE_MESSAGING_SENDER_ID": "609460051081",
+      "FIREBASE_APP_ID": "1:609460051081:web:ea30d11a2f818c26487a58",
+      "FIREBASE_MEASUREMENT_ID": "G-X4VGEHPK3J"
     }
   }
 }

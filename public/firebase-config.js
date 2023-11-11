@@ -6,6 +6,6 @@ const firebaseConfig = {
     messagingSenderId: process.env.FIREBASE_MESSAGING_SENDER_ID,
     appId: process.env.FIREBASE_APP_ID,
     measurmentId: process.env.FIREBASE_MEASUREMENT_ID
-  };
+};
 
 export default firebaseConfig

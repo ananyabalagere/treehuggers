@@ -1,9 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
+<!DOCTYPE html lang="en">
+<head>
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>SC360</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
     <script type="module">
         // Import the functions you need from the SDKs you need
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
@@ -29,8 +30,26 @@
         const app = initializeApp(firebaseConfig);
         const analytics = getAnalytics(app);
       </script>
-  </head>
-  <body>
-    
-  </body>
+	<link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+  <h1 class="SC360-h1">Santa Cruz 360</h1>
+  
+  <div class="paragraphcontainer">
+	<p class="SCHERE-p">
+		Your next Santa Cruz Adventure Starts here!
+	</p>
+  </div>
+
+  <div class="button-container">
+		<button class="beach-button">Beach</button>
+		<button class="ucsc-button">UCSC</button>
+  
+		<button class="sc-button">Santa Cruz</button>
+  </div>
+
+  <p>Create your personalized itinerary to sightseeing at Santa Cruz.</p>
+</body>
+
+
 </html>

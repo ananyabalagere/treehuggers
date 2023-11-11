@@ -4,5 +4,8 @@
     "firebase": "^10.6.0",
     "svelte": "^4.2.3",
     "vite": "^4.5.0"
+  },
+  "devDependencies": {
+    "dotenv": "^16.3.1"
   }
 }

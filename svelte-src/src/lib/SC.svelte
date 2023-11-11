@@ -4,19 +4,19 @@
   import 'firebase/compat/firestore';
 
   const firebaseConfig = {
-  apiKey: "AIzaSyAobsnee9HLdWRIe7b2ZzVoyEab0q2l_8c",
-  authDomain: "test0-cb8c5.firebaseapp.com",
-  projectId: "test0-cb8c5",
-  storageBucket: "test0-cb8c5.appspot.com",
-  messagingSenderId: "82222829928",
-  appId: "1:82222829928:web:6e43dd913ee9f3356846dd",
-  measurementId: "G-L9VZ4RDW7C"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
   };
   if (!firebase.apps.length) {
     firebase.initializeApp(firebaseConfig);
   }
   const db = firebase.firestore();
-  const collectionRef = db.collection("location-beach");
+  const collectionRef = db.collection("location-SantaCruz");
 
   let images = [];
   let index = 0;
@@ -51,7 +51,7 @@
 <main>
   <p>{images.length}</p>
   {#if images.length > 0}
-    <img src={images[index].IMG} alt="beach"/>
+    <img src={images[index].IMG} alt="santa cruz"/>
     <button on:click={nextImage}>Next</button>
     <button on:click={incrementClicksAndNextImage}>Like and Next</button>
   {/if}

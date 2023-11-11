@@ -24,5 +24,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# firetest.*
+.env
+firetest.*
 UCSC copy.svelte
+firebase.js

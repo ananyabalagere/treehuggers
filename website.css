@@ -3,7 +3,61 @@
 }
 body{
   display:flex;
-  margin-top: 50;
-  align-items:center;
-  justify-content: center;
+  background-color: rgb(80, 116, 89);
+}
+.SC360-h1{
+  position: absolute;
+  top: -3px;
+  left: 50%;
+  transform:translateX(-50%);
+  text-shadow: 2px;
+  background-attachment: fixed;
+}
+
+.SCHERE-p{
+  align-self: center;
+  margin-top: 10px;
+  margin-bottom: 130px;
+}
+
+.ucsc-button{
+  height: 250px;
+  width: 100px;
+  background-image: url(https://sustainabilityreport.ucop.edu/2020/wp-content/uploads/sites/2/2020/10/UCSC_Campus-from-above-1000x670.jpg);
+  border-radius: 25px;
+  font-style: italic;
+  font-size: 55px;
+  cursor: pointer;
+  background-size:200px;
+}
+
+.beach-button{
+  position: absolute;
+  height: 250px;
+  width:150px;
+  font-size: 55px;
+  font-style: italic;
+  border-radius: 25px;
+  background-image:url(https://media.california.com/media/_versions_webp/articles/santa_cruz_beach__8030x5353____v1800x750__.webp);
+  background-position: bottom;
+  background-size:200px;
+}
+
+
+.sc-button{
+  margin-right: 500px;
+  margin-top: 400px;
+  height: 200px; 
+  width: 200px;
+  font-size: 55px;
+  font-style: italic;
+  border-radius: 25px;
+  background-image:url(https://i.pinimg.com/originals/aa/a7/53/aaa7539c4cb6d54d03215ad06b26c494.jpg);
+  background-size:330px;
+  background-position: center;
+}
+
+.button-container{
+  display: block;
+  margin-bottom: 20px;
 }
